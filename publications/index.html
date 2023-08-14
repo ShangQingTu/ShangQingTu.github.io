@@ -105,6 +105,183 @@
   </header>
 
   <article class="post-content publications clearfix">
+  
+    <h3 class="year">Preprints</h3>
+    <ol class="bibliography">
+        <li>
+        <div id="kola-2023">
+
+            <span class="title">KoLA: Carefully Benchmarking World Knowledge of Large Language Models</span>
+            <span class="author">
+
+              Jifan Yu, Xiaozhi Wang, <em>Shangqing Tu</em>, Shulin Cao, Daniel Zhang-Li, Xin Lv, Hao Peng, Zijun Yao, Xiaohan Zhang, Hanming Li, Chunyang Li, Zheyuan Zhang, Yushi Bai, Yantao Liu, Amy Xin, Nianyi Lin, Kaifeng Yun, Linlu Gong, Jianhui Chen, Zhili Wu, Yunjia Qi, Weikai Li, Yong Guan, Kaisheng Zeng, Ji Qi, Hailong Jin, Jinxin Liu, Yu Gu, Yuan Yao, Ning Ding, Lei Hou, Zhiyuan Liu, Bin Xu, Jie Tang, Juanzi Li
+          </span>
+
+            <span class="periodical">
+
+    <em>arxiv-2023-06</em>
+
+  </span>
+
+
+            <span class="links">
+
+  [<a class="abstract">Abs</a>][<a
+                    href="https://arxiv.org/pdf/2306.09296.pdf">pdf</a>] [<a
+                    href="https://github.com/THU-KEG/KoLA">code</a>][<a
+                    href="https://kola.xlore.cn/">website</a>]
+
+
+
+
+
+
+
+
+</span>
+
+            <!-- Hidden abstract block -->
+
+            <span class="abstract hidden">
+    <p>The unprecedented performance of large language models (LLMs) necessitates improvements in evaluations. Rather than merely exploring the breadth of LLM abilities, we believe meticulous and thoughtful designs are essential to thorough, unbiased, and applicable evaluations. Given the importance of world knowledge to LLMs, we construct a Knowledge-oriented LLM Assessment benchmark (KoLA), in which we carefully design three crucial factors: 
+      (1) For ability modeling, we mimic human cognition to form a four-level taxonomy of knowledge-related abilities, covering 19 tasks. (2) For data, to ensure fair comparisons, we use both Wikipedia, a corpus prevalently pre-trained by LLMs, along with continuously collected emerging corpora, aiming to evaluate the capacity to handle unseen data and evolving knowledge. (3) For evaluation criteria, we adopt a contrastive system, including overall standard scores for better numerical comparability across tasks and models and a unique self-contrast metric for automatically evaluating knowledge hallucination. We evaluate 21 open-source and commercial LLMs and obtain some intriguing findings. 
+      The KoLA dataset and open-participation leaderboard are publicly released at https://kola.xlore.cn/ and will be continuously updated to provide references for developing LLMs and knowledge-related systems.
+    </p>
+</span>
+
+        </div>
+        </li>
+        <li>
+          <div id="chatlog-2023">
+  
+              <span class="title">ChatLog: Recording and Analyzing ChatGPT Across Time</span>
+              <span class="author">
+                <em>Shangqing Tu</em>, Chunyang Li, Jifan Yu, Xiaozhi Wang, Lei Hou, Juanzi Li
+              </span>
+  
+              <span class="periodical">
+  
+      <em>arxiv-2023-04</em>
+  
+    </span>
+  
+  
+              <span class="links">
+  
+    [<a class="abstract">Abs</a>][<a
+                      href="https://arxiv.org/pdf/2304.14106.pdf">pdf</a>] [<a
+                      href="https://github.com/THU-KEG/ChatLog">code</a>]
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+  
+              <!-- Hidden abstract block -->
+  
+              <span class="abstract hidden">
+      <p>While there are abundant researches about evaluating ChatGPT on natural language understanding and generation tasks, few studies have investigated how ChatGPT's behavior changes over time. In this paper, we collect a coarse-to-fine temporal dataset called ChatLog, consisting of two parts that update monthly and daily: ChatLog-Monthly is a dataset of 38,730 question-answer pairs collected every month including questions from both the reasoning and classification tasks. ChatLog-Daily, on the other hand, consists of ChatGPT's responses to 1000 identical questions for long-form generation every day. We conduct comprehensive automatic and human evaluation to provide the evidence for the existence of ChatGPT evolving patterns. We further analyze the unchanged characteristics of ChatGPT over time by extracting its knowledge and linguistic features. 
+        We find some stable features to improve the robustness of a RoBERTa-based detector on new versions of ChatGPT. We will continuously maintain our project at https://github.com/THU-KEG/ChatLog.</p>
+  </span>
+  
+          </div>
+          </li>
+    </ol>
+    
+    <h3 class="year">2023</h3>
+    <ol class="bibliography">
+        <li>
+        <div id="cikm-2023">
+
+            <span class="title">LittleMu: Deploying an Online Virtual Teaching Assistant via Heterogeneous Sources Integration and Chain of Teach Prompts</span>
+            <span class="author">
+
+
+              <em>Shangqing Tu</em>, Zheyuan Zhang, Jifan Yu, Chunyang Li, Siyu Zhang, Zijun Yao, Lei Hou, Juanzi Li
+
+  </span>
+
+            <span class="periodical">
+
+    <em>CIKM 2023</em>
+
+  </span>
+
+
+            <span class="links">
+
+  [<a class="abstract">Abs</a>][<a
+                    href="https://arxiv.org/pdf/2308.05935.pdf">pdf</a>] [<a
+                    href="https://github.com/THU-KEG/VTA">code</a>]
+
+
+
+
+
+
+
+
+</span>
+
+            <!-- Hidden abstract block -->
+
+            <span class="abstract hidden">
+    <p>Teaching assistants have played essential roles in the long history of education. However, few MOOC platforms are providing human or virtual teaching assistants to support learning for massive online students due to the complexity of real-world online education scenarios and the lack of training data. In this paper, we present a virtual MOOC teaching assistant, LittleMu with minimum labeled training data, to provide question answering and chit-chat services. Consisting of two interactive modules of heterogeneous retrieval and language model prompting, LittleMu first integrates structural, semi- and unstructured knowledge sources to support accurate answers for a wide range of questions. Then, we design delicate demonstrations named "Chain of Teach" prompts to exploit the large-scale pre-trained model to handle complex uncollected questions. Except for question answering, we develop other educational services such as knowledge-grounded chit-chat. 
+      We test the system's performance via both offline evaluation and online deployment. Since May 2020, our LittleMu system has served over 80,000 users with over 300,000 queries from over 500 courses on XuetangX MOOC platform, which continuously contributes to a more convenient and fair education. Our code, services, and dataset will be available at https://github.com/THU-KEG/VTA.
+    </p>
+</span>
+
+        </div>
+        </li>
+        <li>
+          <div id="sigir-2023">
+  
+              <span class="title">MoocRadar: A Fine-grained and Multi-aspect Knowledge Repository for Improving Cognitive Student Modeling in MOOCs</span>
+              <span class="author">
+  
+  
+                Jifan Yu, Mengying Lu, Qingyang Zhong, Zijun Yao, <em>Shangqing Tu</em>, Zhengshan Liao, Xiaoya Li, Manli Li, Lei Hou, Hai-Tao Zheng, Juanzi Li, Jie Tang
+  
+  
+    </span>
+  
+              <span class="periodical">
+  
+      <em>SIGIR 2023</em>
+  
+    </span>
+  
+  
+              <span class="links">
+  
+    [<a class="abstract">Abs</a>][<a
+                      href="https://arxiv.org/pdf/2304.02205.pdf">pdf</a>] [<a
+                      href="https://github.com/THU-KEG/MOOC-Radar">code</a>]
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+  
+              <!-- Hidden abstract block -->
+  
+              <span class="abstract hidden">
+      <p>Student modeling, the task of inferring a student's learning characteristics through their interactions with coursework, is a fundamental issue in intelligent education. Although the recent attempts from knowledge tracing and cognitive diagnosis propose several promising directions for improving the usability and effectiveness of current models, the existing public datasets are still insufficient to meet the need for these potential solutions due to their ignorance of complete exercising contexts, fine-grained concepts, and cognitive labels. 
+        In this paper, we present MoocRadar, a fine-grained, multi-aspect knowledge repository consisting of 2,513 exercise questions, 5,600 knowledge concepts, and over 12 million behavioral records. Specifically, we propose a framework to guarantee a high-quality and comprehensive annotation of fine-grained concepts and cognitive labels. The statistical and experimental results indicate that our dataset provides the basis for the future improvements of existing methods. Moreover, to support the convenient usage for researchers, we release a set of tools for data querying, model adaption, and even the extension of our repository, which are now available at this https://github.com/THU-KEG/MOOC-Radar</p>
+  </span>
+  
+          </div>
+          </li>
+    </ol>
+
 
       <h3 class="year">2022</h3>
       <ol class="bibliography">
@@ -154,7 +331,8 @@
           </li>
       </ol>
 <h3 class="year">2021</h3>
-<ol class="bibliography"><li>
+<ol class="bibliography">
+  <li>
 
 <div id="fangweizhu-acl-2021">
 
