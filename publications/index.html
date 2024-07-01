@@ -108,7 +108,82 @@
   
     <h3 class="year">Preprints</h3>
     <ol class="bibliography">
+      <li>
+        <div id="KJ-2024">
 
+            <span class="title">Knowledge-to-Jailbreak: One Knowledge Point Worth One Attack</span>
+            <span class="author">
+              <em>Shangqing Tu</em>*, Zhuoran Pan*, Wenxuan Wang, Zhexin Zhang, Yuliang Sun, Jifan Yu, Hongning Wang, Lei Hou, Juanzi Li
+            </span>
+
+            <span class="periodical">
+
+    <em>arxiv-2024-06</em>
+
+  </span>
+
+
+            <span class="links">
+
+  [<a class="abstract">Abs</a>][<a
+                    href="https://arxiv.org/pdf/2406.11682">pdf</a>] [<a
+                    href="https://github.com/THU-KEG/Knowledge-to-Jailbreak">code</a>]
+
+
+
+
+
+
+
+
+</span>
+
+            <!-- Hidden abstract block -->
+
+            <span class="abstract hidden">
+    <p>Large language models (LLMs) have been increasingly applied to various domains, which triggers increasing concerns about LLMs' safety on specialized domains, e.g. medicine. However, testing the domain-specific safety of LLMs is challenging due to the lack of domain knowledge-driven attacks in existing benchmarks. To bridge this gap, we propose a new task, knowledge-to-jailbreak, which aims to generate jailbreaks from domain knowledge to evaluate the safety of LLMs when applied to those domains. We collect a large-scale dataset with 12,974 knowledge-jailbreak pairs and fine-tune a large language model as jailbreak-generator, to produce domain knowledge-specific jailbreaks. Experiments on 13 domains and 8 target LLMs demonstrate the effectiveness of jailbreak-generator in generating jailbreaks that are both relevant to the given knowledge and harmful to the target LLMs. We also apply our method to an out-of-domain knowledge base, showing that jailbreak-generator can generate jailbreaks that are comparable in harmfulness to those crafted by human experts. Data and code: https://github.com/THU-KEG/Knowledge-to-Jailbreak/.</p>
+</span>
+
+        </div>
+        </li>
+      <li>
+        <div id="DICE-2024">
+
+            <span class="title">DICE: Detecting In-distribution Contamination in LLM's Fine-tuning Phase for Math Reasoning</span>
+            <span class="author">
+              <em>Shangqing Tu</em>*, Kejian Zhu*, Yushi Bai, Zijun Yao, Lei Hou, Juanzi Li
+            </span>
+
+            <span class="periodical">
+
+    <em>arxiv-2024-06</em>
+
+  </span>
+
+
+            <span class="links">
+
+  [<a class="abstract">Abs</a>][<a
+                    href="https://arxiv.org/abs/2406.04197">pdf</a>] [<a
+                    href="https://github.com/THU-KEG/DICE">code</a>]
+
+
+
+
+
+
+
+
+</span>
+
+            <!-- Hidden abstract block -->
+
+            <span class="abstract hidden">
+    <p>The advancement of large language models (LLMs) relies on evaluation using public benchmarks, but data contamination can lead to overestimated performance. Previous researches focus on detecting contamination by determining whether the model has seen the exact same data during training. In this work, we argue that even training on data similar to benchmark data inflates performance on in-distribution tasks without improving overall capacity, which we called In-distribution contamination. To effectively detect in-distribution contamination, we propose DICE, a novel method that leverages the internal states of LLMs to locate-then-detect the contamination. DICE first identifies the most sensitive layer to contamination, then trains a classifier based on the internal states of that layer. Experiments reveal DICE's high accuracy in detecting in-distribution contamination across various LLMs and math reasoning datasets. We also show the generalization capability of the trained DICE detector, which is able to detect contamination across multiple benchmarks with similar distributions. Additionally, we find that the DICE detection scores are positively correlated with the performance of ten LLMs fine-tuned by either us or other organizations on four math reasoning datasets (with R2 values between 0.6 and 0.75). This indicates that the in-distribution contamination problem potentially lead to an overestimation of the true capabilities of many existing models. The code and data are available at https://github.com/THU-KEG/DICE.</p>
+</span>
+
+        </div>
+        </li>
         <li>
           <div id="chatlog-2023">
   
@@ -169,7 +244,7 @@
               <span class="links">
   
     [<a class="abstract">Abs</a>][<a
-                      href="https://shangqingtu.github.io/assets/r_eval.pdf">pdf</a>] [<a
+                      href="https://arxiv.org/pdf/2406.11681">pdf</a>] [<a
                       href="https://github.com/THU-KEG/R-Eval">code</a>]
   
   
