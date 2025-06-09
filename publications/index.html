@@ -108,82 +108,6 @@
   
     <h3 class="year">Preprints</h3>
     <ol class="bibliography">
-      <li>
-        <div id="KJ-2024">
-
-            <span class="title">Knowledge-to-Jailbreak: One Knowledge Point Worth One Attack</span>
-            <span class="author">
-              <em>Shangqing Tu</em>*, Zhuoran Pan*, Wenxuan Wang, Zhexin Zhang, Yuliang Sun, Jifan Yu, Hongning Wang, Lei Hou, Juanzi Li
-            </span>
-
-            <span class="periodical">
-
-    <em>arxiv-2024-06</em>
-
-  </span>
-
-
-            <span class="links">
-
-  [<a class="abstract">Abs</a>][<a
-                    href="https://arxiv.org/pdf/2406.11682">pdf</a>] [<a
-                    href="https://github.com/THU-KEG/Knowledge-to-Jailbreak">code</a>]
-
-
-
-
-
-
-
-
-</span>
-
-            <!-- Hidden abstract block -->
-
-            <span class="abstract hidden">
-    <p>Large language models (LLMs) have been increasingly applied to various domains, which triggers increasing concerns about LLMs' safety on specialized domains, e.g. medicine. However, testing the domain-specific safety of LLMs is challenging due to the lack of domain knowledge-driven attacks in existing benchmarks. To bridge this gap, we propose a new task, knowledge-to-jailbreak, which aims to generate jailbreaks from domain knowledge to evaluate the safety of LLMs when applied to those domains. We collect a large-scale dataset with 12,974 knowledge-jailbreak pairs and fine-tune a large language model as jailbreak-generator, to produce domain knowledge-specific jailbreaks. Experiments on 13 domains and 8 target LLMs demonstrate the effectiveness of jailbreak-generator in generating jailbreaks that are both relevant to the given knowledge and harmful to the target LLMs. We also apply our method to an out-of-domain knowledge base, showing that jailbreak-generator can generate jailbreaks that are comparable in harmfulness to those crafted by human experts. Data and code: https://github.com/THU-KEG/Knowledge-to-Jailbreak/.</p>
-</span>
-
-        </div>
-        </li>
-      <li>
-        <div id="DICE-2024">
-
-            <span class="title">DICE: Detecting In-distribution Contamination in LLM's Fine-tuning Phase for Math Reasoning</span>
-            <span class="author">
-              <em>Shangqing Tu</em>*, Kejian Zhu*, Yushi Bai, Zijun Yao, Lei Hou, Juanzi Li
-            </span>
-
-            <span class="periodical">
-
-    <em>arxiv-2024-06</em>
-
-  </span>
-
-
-            <span class="links">
-
-  [<a class="abstract">Abs</a>][<a
-                    href="https://arxiv.org/abs/2406.04197">pdf</a>] [<a
-                    href="https://github.com/THU-KEG/DICE">code</a>]
-
-
-
-
-
-
-
-
-</span>
-
-            <!-- Hidden abstract block -->
-
-            <span class="abstract hidden">
-    <p>The advancement of large language models (LLMs) relies on evaluation using public benchmarks, but data contamination can lead to overestimated performance. Previous researches focus on detecting contamination by determining whether the model has seen the exact same data during training. In this work, we argue that even training on data similar to benchmark data inflates performance on in-distribution tasks without improving overall capacity, which we called In-distribution contamination. To effectively detect in-distribution contamination, we propose DICE, a novel method that leverages the internal states of LLMs to locate-then-detect the contamination. DICE first identifies the most sensitive layer to contamination, then trains a classifier based on the internal states of that layer. Experiments reveal DICE's high accuracy in detecting in-distribution contamination across various LLMs and math reasoning datasets. We also show the generalization capability of the trained DICE detector, which is able to detect contamination across multiple benchmarks with similar distributions. Additionally, we find that the DICE detection scores are positively correlated with the performance of ten LLMs fine-tuned by either us or other organizations on four math reasoning datasets (with R2 values between 0.6 and 0.75). This indicates that the in-distribution contamination problem potentially lead to an overestimation of the true capabilities of many existing models. The code and data are available at https://github.com/THU-KEG/DICE.</p>
-</span>
-
-        </div>
-        </li>
         <li>
           <div id="chatlog-2023">
   
@@ -224,6 +148,138 @@
           </div>
           </li>
     </ol>
+    <h3 class="year">2025</h3>
+    <ol class="bibliography">
+        <li>
+        <div id="KDD-2025">
+
+            <span class="title">Knowledge-to-Jailbreak: Investigating Knowledge-driven Jailbreaking Attacks for Large Language Models</span>
+            <span class="author">
+
+
+              <em>Shangqing Tu</em>*, Zhuoran Pan*, Wenxuan Wang, Zhexin Zhang, Yuliang Sun, Jifan Yu, Hongning Wang, Lei Hou, Juanzi Li
+
+  </span>
+
+            <span class="periodical">
+
+    <em>KDD 2025 research track</em>
+
+  </span>
+
+
+            <span class="links">
+
+  [<a class="abstract">Abs</a>][<a
+                    href="https://arxiv.org/pdf/2406.11682?">pdf</a>] [<a
+                    href="https://github.com/THU-KEG/Knowledge-to-Jailbreak/">code</a>]
+
+
+
+
+
+
+
+
+</span>
+
+            <!-- Hidden abstract block -->
+
+            <span class="abstract hidden">
+    <p>Large language models (LLMs) have been increasingly applied to various domains, which triggers increasing concerns about LLMs' safety on specialized domains, e.g. medicine. Despite prior explorations on general jailbreaking attacks, there are two challenges for applying existing attacks on testing the domain-specific safety of LLMs: (1) Lack of professional knowledge-driven attacks,  (2) Insufficient coverage of domain knowledge.   To bridge this gap, we propose a new task, knowledge-to-jailbreak, which aims to generate jailbreaking attacks from domain knowledge, requiring both attack effectiveness and knowledge relevance. 
+We collect a large-scale dataset with 12,974 knowledge-jailbreak pairs and fine-tune a large language model as jailbreak-generator, to produce domain knowledge-specific jailbreaks. Experiments on 13 domains and 8 target LLMs demonstrate the effectiveness of jailbreak-generator in generating jailbreaks that are both threatening to the target LLMs and relevant to the given knowledge. We also apply our method to an out-of-domain knowledge base, showing that jailbreak-generator can generate jailbreaks that are comparable in harmfulness to those crafted by human experts. Data and code are available at: https://github.com/THU-KEG/Knowledge-to-Jailbreak/.
+    </p>
+</span>
+
+        </div>
+        </li>
+        <li>
+          <div id="ACL-2025">
+  
+              <span class="title">LongBench v2: Towards Deeper Understanding and Reasoning on Realistic Long-context Multitasks</span>
+              <span class="author">
+  
+  
+               Yushi Bai*,  <em>Shangqing Tu</em>*, Jiajie Zhang, Hao Peng, Xiaozhi Wang, Xin Lv, Shulin Cao, Jiazheng Xu, Lei Hou, Yuxiao Dong, Jie Tang, Juanzi Li
+  
+    </span>
+  
+              <span class="periodical">
+  
+      <em>ACL 2025</em>
+  
+    </span>
+  
+  
+              <span class="links">
+  
+    [<a class="abstract">Abs</a>][<a
+                      href="https://arxiv.org/pdf/2412.15204">pdf</a>] [<a
+                      href="https://longbench2.github.io/">code</a>]
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+  
+              <!-- Hidden abstract block -->
+  
+              <span class="abstract hidden">
+      <p>This paper introduces LongBench v2, a benchmark designed to assess the ability of LLMs to handle long-context problems requiring \emph{deep understanding and reasoning} across real-world multitasks. LongBench v2 consists of 503 challenging multiple-choice questions, with contexts ranging from 8k to 2M words, across six major task categories: single-document QA, multi-document QA, long in-context learning, long-dialogue history understanding, code repository understanding, and long structured data understanding.
+To ensure the breadth and the practicality, we collect data from nearly 100 highly educated individuals with diverse professional backgrounds. We employ both automated and manual review processes to maintain high quality and difficulty, resulting in human experts achieving only 53.7\% accuracy under a 15-minute time constraint.
+Our evaluation reveals that the best-performing model, when directly answers the questions, achieves only 50.1\% accuracy. In contrast, the o1-preview model, which includes longer reasoning, achieves 57.7\%, surpassing the human baseline by 4\%. 
+These results highlight the importance of enhanced reasoning ability and scaling inference-time compute to tackle the long-context challenges in LongBench v2. </p>
+  </span>
+  
+          </div>
+          </li>
+          <li>
+          <div id="ACL-2025">
+  
+              <span class="title">Establishing Trustworthy LLM Evaluation via Shortcut Neuron Analysis</span>
+              <span class="author">
+               Kejian Zhu*, <em>Shangqing Tu</em>*, Zhuoran Jin, Lei Hou, Juanzi Li, Jun Zhao
+  
+    </span>
+  
+              <span class="periodical">
+  
+      <em>ACL 2025</em>
+  
+    </span>
+  
+  
+              <span class="links">
+  
+    [<a class="abstract">Abs</a>][<a
+                      href="https://arxiv.org/pdf/2506.04142">pdf</a>] [<a
+                      href="https://github.com/GaryStack/Trustworthy-Evaluation">code</a>]
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+  
+              <!-- Hidden abstract block -->
+  
+              <span class="abstract hidden">
+      <p>The development of large language models (LLMs) depends on trustworthy evaluation. However, most current evaluations rely on public benchmarks, which are prone to data contamination issues that significantly compromise fairness. Previous researches have focused on constructing dynamic benchmarks to address contamination. However, continuously building new benchmarks is costly and cyclical. In this work, we aim to tackle contamination by analyzing the mechanisms of contaminated models themselves. Through our experiments, we discover that the overestimation of contaminated models is likely due to parameters acquiring shortcut solutions in training. We further propose a novel method for identifying shortcut neurons through comparative and causal analysis. Building on this, we introduce an evaluation method called shortcut neuron patching to suppress shortcut neurons. Experiments validate the effectiveness of our approach in mitigating contamination. Additionally, our evaluation results exhibit a strong linear correlation with MixEval, a recently released trustworthy benchmark, achieving a Spearman coefficient (ρ) exceeding 0.95. This high correlation indicates that our method closely reveals true capabilities of the models and is trustworthy. We conduct further experiments to demonstrate the generalizability of our method across various benchmarks and hyperparameter settings. Code: https://github.com/GaryStack/Trustworthy-Evaluation </p>
+  </span>
+  
+          </div>
+          </li>
+    </ol>
+
+
+
     <h3 class="year">2024</h3>
       <ol class="bibliography">
         <li>
