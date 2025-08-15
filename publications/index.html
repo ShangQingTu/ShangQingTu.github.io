@@ -108,6 +108,82 @@
   
     <h3 class="year">Preprints</h3>
     <ol class="bibliography">
+      <li>
+          <div id="glm4.5-2023">
+  
+              <span class="title">GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models</span>
+              <span class="author">
+                 GLM-4.5 Team: Aohan Zeng, Xin Lv, Qinkai Zheng, Zhenyu Hou, ...,<em>Shangqing Tu</em>, ... , Jie Tang
+              </span>
+  
+              <span class="periodical">
+  
+      <em>arxiv-2025-08</em>
+  
+    </span>
+  
+  
+              <span class="links">
+  
+    [<a class="abstract">Abs</a>][<a
+                      href="https://arxiv.org/pdf/2508.06471">pdf</a>] [<a
+                      href="https://github.com/zai-org/GLM-4.5">code</a>]
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+  
+              <!-- Hidden abstract block -->
+  
+              <span class="abstract hidden">
+      <p>We present GLM-4.5, an open-source Mixture-of-Experts (MoE) large language model with 355B total parameters and 32B activated parameters, featuring a hybrid reasoning method that supports both thinking and direct response modes. Through multi-stage training on 23T tokens and comprehensive post-training with expert model iteration and reinforcement learning, GLM-4.5 achieves strong performance across agentic, reasoning, and coding (ARC) tasks, scoring 70.1% on TAU-Bench, 91.0% on AIME 24, and 64.2% on SWE-bench Verified. With much fewer parameters than several competitors, GLM-4.5 ranks 3rd overall among all evaluated models and 2nd on agentic benchmarks. We release both GLM-4.5 (355B parameters) and a compact version, GLM-4.5-Air (106B parameters), to advance research in reasoning and agentic AI systems. Code, models, and more information are available at https://github.com/zai-org/GLM-4.5.</p>
+  </span>
+  
+          </div>
+          </li>
+          <li>
+          <div id="glm-4.5v-2025">
+  
+              <span class="title">GLM-4.1V-Thinking and GLM-4.5V: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning</span>
+              <span class="author">
+                GLM-V Team: Wenyi Hong, Wenmeng Yu, Xiaotao Gu, ..., <em>Shangqing Tu</em>, ..., Jie Tang
+              </span>
+  
+              <span class="periodical">
+  
+      <em>arxiv-2023-07</em>
+  
+    </span>
+  
+  
+              <span class="links">
+  
+    [<a class="abstract">Abs</a>][<a
+                      href="https://arxiv.org/abs/2507.01006">pdf</a>] [<a
+                      href="https://github.com/zai-org/GLM-V">code</a>]
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+  
+              <!-- Hidden abstract block -->
+  
+              <span class="abstract hidden">
+      <p>We present GLM-4.1V-Thinking and GLM-4.5V, a family of vision-language models (VLMs) designed to advance general-purpose multimodal understanding and reasoning. In this report, we share our key findings in the development of the reasoning-centric training framework. We first develop a capable vision foundation model with significant potential through large-scale pre-training, which arguably sets the upper bound for the final performance. We then propose Reinforcement Learning with Curriculum Sampling (RLCS) to unlock the full potential of the model, leading to comprehensive capability enhancement across a diverse range of tasks, including STEM problem solving, video understanding, content recognition, coding, grounding, GUI-based agents, and long document interpretation. In a comprehensive evaluation across 42 public benchmarks, GLM-4.5V achieves state-of-the-art performance on nearly all tasks among open-source models of similar size, and demonstrates competitive or even superior results compared to closed-source models such as Gemini-2.5-Flash on challenging tasks including Coding and GUI Agents. Meanwhile, the smaller GLM-4.1V-9B-Thinking remains highly competitive-achieving superior results to the much larger Qwen2.5-VL-72B on 29 benchmarks. We open-source both GLM-4.1V-9B-Thinking and GLM-4.5V. Code, models and more information are released at https://github.com/zai-org/GLM-V.</p>
+  </span>
+  
+          </div>
+          </li>
         <li>
           <div id="chatlog-2023">
   
@@ -150,6 +226,48 @@
     </ol>
     <h3 class="year">2025</h3>
     <ol class="bibliography">
+      <li>
+        <div id="ACMMM-2025">
+
+            <span class="title">LongWriter-V: Enabling Ultra-Long and High-Fidelity Generation in Vision-Language Models</span>
+            <span class="author">
+
+
+              <em>Shangqing Tu</em>*, Yucheng Wang*, Daniel Zhang-Li, Yushi Bai, Jifan Yu, Yuhao Wu, Lei Hou, Huiqin Liu, Zhiyuan Liu, Bin Xu, Juanzi Li
+
+  </span>
+
+            <span class="periodical">
+
+    <em>ACM MM25 (Oral)</em>
+
+  </span>
+
+
+            <span class="links">
+
+  [<a class="abstract">Abs</a>][<a
+                    href="https://arxiv.org/pdf/2502.14834">pdf</a>] [<a
+                    href="https://github.com/THU-KEG/LongWriter-V">code</a>]
+
+
+
+
+
+
+
+
+</span>
+
+            <!-- Hidden abstract block -->
+
+            <span class="abstract hidden">
+    <p>Existing Large Vision-Language Models (LVLMs) can process inputs with context lengths up to 128k visual and text tokens, yet they struggle to generate coherent outputs beyond 1,000 words. We find that the primary limitation is the absence of long output examples during supervised fine-tuning (SFT). To tackle this issue, we introduce LongWriter-V-22k, a SFT dataset comprising 22,158 examples, each with multiple input images, an instruction, and corresponding outputs ranging from 0 to 10,000 words. Moreover, to achieve long outputs that maintain high-fidelity to the input images, we employ Direct Preference Optimization (DPO) to the SFT model. Given the high cost of collecting human feedback for lengthy outputs (e.g., 3,000 words), we propose IterDPO, which breaks long outputs into segments and uses iterative corrections to form preference pairs with the original outputs. Additionally, we develop MMLongBench-Write, a benchmark featuring six tasks to evaluate the long-generation capabilities of VLMs. Our 7B parameter model, trained with LongWriter-V-22k and IterDPO, achieves impressive performance on this benchmark, outperforming larger proprietary models like GPT-4o. Code and data: https://github.com/THU-KEG/LongWriter-V
+    </p>
+</span>
+
+        </div>
+        </li>
         <li>
         <div id="KDD-2025">
 
@@ -206,7 +324,7 @@ We collect a large-scale dataset with 12,974 knowledge-jailbreak pairs and fine-
   
               <span class="periodical">
   
-      <em>ACL 2025</em>
+      <em>ACL 2025 Main</em>
   
     </span>
   
@@ -248,7 +366,7 @@ These results highlight the importance of enhanced reasoning ability and scaling
   
               <span class="periodical">
   
-      <em>ACL 2025</em>
+      <em>ACL 2025 Main</em>
   
     </span>
   
@@ -330,7 +448,7 @@ These results highlight the importance of enhanced reasoning ability and scaling
   
               <span class="periodical">
   
-      <em>ACL24 Main</em>
+      <em>ACL 2024 Main</em>
   
     </span>
   
@@ -559,7 +677,7 @@ These results highlight the importance of enhanced reasoning ability and scaling
 
     <span class="periodical">
     
-      <em>ACL 2021</em>
+      <em>ACL 2021 Main</em>
 
     </span>
 
