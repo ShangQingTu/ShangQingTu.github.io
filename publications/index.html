@@ -105,9 +105,42 @@
   </header>
 
   <article class="post-content publications clearfix">
-  
+
+
+
     <h3 class="year">Preprints</h3>
     <ol class="bibliography">
+      <li>
+          <div id="glm5-2026">
+
+              <span class="title">GLM-5: from Vibe Coding to Agentic Engineering</span>
+              <span class="author">
+                 GLM-5 Team: Aohan Zeng, Xin Lv, ..., <em>Shangqing Tu</em>, ..., Yilin Zhou
+              </span>
+
+              <span class="periodical">
+
+      <em>arxiv-2026-02</em>
+
+    </span>
+
+
+              <span class="links">
+
+    [<a class="abstract">Abs</a>][<a
+                      href="https://arxiv.org/abs/2602.15763">pdf</a>]
+
+
+  </span>
+
+              <!-- Hidden abstract block -->
+
+              <span class="abstract hidden">
+      <p>We present GLM-5, a next-generation foundation model designed to transition the paradigm of vibe coding to agentic engineering. Building upon the agentic, reasoning, and coding (ARC) capabilities of its predecessor, GLM-5 adopts DSA to significantly reduce training and inference costs while maintaining long-context fidelity. To advance model alignment and autonomy, we implement a new asynchronous reinforcement learning infrastructure that drastically improves post-training efficiency by decoupling generation from training. Furthermore, we propose novel asynchronous agent RL algorithms that further improve RL quality, enabling the model to learn from complex, long-horizon interactions more effectively. Through these innovations, GLM-5 achieves state-of-the-art performance on major open benchmarks. Most critically, GLM-5 demonstrates unprecedented capability in real-world coding tasks, surpassing previous baselines in handling end-to-end software engineering challenges. Code, models, and more information are available at https://github.com/zai-org/GLM-5 .</p>
+  </span>
+
+          </div>
+          </li>
       <li>
           <div id="glm4.5-2023">
   
@@ -224,6 +257,42 @@
           </div>
           </li>
     </ol>
+
+        <h3 class="year">2026</h3>
+    <ol class="bibliography">
+      <li>
+          <div id="deepprune-2026">
+
+              <span class="title">DeepPrune: Parallel Scaling without Inter-trace Redundancy</span>
+              <span class="author">
+                 <em>Shangqing Tu</em>*, Yaxuan Li*, Yushi Bai, Lei Hou, Juanzi Li
+              </span>
+
+              <span class="periodical">
+
+      <em>ACL 2026 Findings</em>
+
+    </span>
+
+
+              <span class="links">
+
+    [<a class="abstract">Abs</a>][<a
+                      href="https://arxiv.org/abs/2510.08483">pdf</a>]
+
+
+  </span>
+
+              <!-- Hidden abstract block -->
+
+              <span class="abstract hidden">
+      <p>Parallel scaling has emerged as a powerful paradigm to enhance reasoning capabilities in large language models (LLMs) by generating multiple Chain-of-Thought (CoT) traces simultaneously. However, this approach introduces significant computational inefficiency due to inter-trace redundancy -- our analysis reveals that over 80% of parallel reasoning traces yield identical final answers, representing substantial wasted computation. To address this critical efficiency bottleneck, we propose DeepPrune, a novel framework that enables efficient parallel scaling through dynamic pruning. Our method features a specialized judge model trained with out-of-distribution data (AIME 2022, AIME 2023, and MATH 500) using oversampling techniques to accurately predict answer equivalence from partial reasoning traces, achieving 0.7072 AUROC on unseen reasoning models. Combined with an online greedy clustering algorithm that dynamically prunes redundant paths while preserving answer diversity. Comprehensive evaluations across three challenging benchmarks (AIME 2024, AIME 2025, and GPQA) and multiple reasoning models demonstrate that DeepPrune achieves remarkable token reduction of 65.73%--88.50% compared to conventional consensus sampling, while maintaining competitive accuracy within 3 percentage points. Our work establishes a new standard for efficient parallel reasoning, making high-performance reasoning more efficient. Our code and data are here: https://deepprune.github.io/ .</p>
+  </span>
+
+          </div>
+          </li>
+    </ol>
+
     <h3 class="year">2025</h3>
     <ol class="bibliography">
       <li>
@@ -316,16 +385,16 @@ We collect a large-scale dataset with 12,974 knowledge-jailbreak pairs and fine-
   
               <span class="title">LongBench v2: Towards Deeper Understanding and Reasoning on Realistic Long-context Multitasks</span>
               <span class="author">
-  
-  
+
+
                Yushi Bai*,  <em>Shangqing Tu</em>*, Jiajie Zhang, Hao Peng, Xiaozhi Wang, Xin Lv, Shulin Cao, Jiazheng Xu, Lei Hou, Yuxiao Dong, Jie Tang, Juanzi Li
-  
+
     </span>
-  
+
               <span class="periodical">
-  
-      <em>ACL 2025 Main</em>
-  
+
+      <em>ACL 2025 Main (<strong><a href="https://resources.paperdigest.org/2025/09/most-influential-acl-papers-2025-09-version/">Top-15 Influential</a></strong>)</em>
+
     </span>
   
   
